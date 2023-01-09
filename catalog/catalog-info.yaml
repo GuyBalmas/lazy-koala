@@ -14,11 +14,11 @@ metadata:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=lazy-koala
     backstage.io/techdocs-ref: dir:.
   links:
-  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com
+  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/hello/
     name: Hello-World
-  - url: "http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/welcome"
+  - url: "http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/hello/welcome"
     name: Welcome
-  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/k8s
+  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/k8s/pod
     name: K8S-spec
 spec:
   type: service
