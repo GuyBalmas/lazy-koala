@@ -18,7 +18,7 @@ metadata:
     name: Hello-World
   - url: "http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/hello/welcome"
     name: Welcome
-  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/k8s/pod
+  - url: http://lazy-koala.apps.tap-guy-lab-p8m8nm3rts18.ts-cna.com/k8s/
     name: K8S-spec
 spec:
   type: service
