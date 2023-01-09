@@ -24,3 +24,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: cloud-native-applications-team
+  providesApis: # list of APIs provided by the Component
+    - apps/lazy-koala-dev
