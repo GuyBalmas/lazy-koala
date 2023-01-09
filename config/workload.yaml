@@ -6,14 +6,17 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/part-of: lazy-koala
-spec:
+    apis.apps.tanzu.vmware.com/register-api: "true"
+spec:  
+  build:
+    env:
+      - name: BP_JVM_VERSION
+        value: "11"
   env:
   - name: GREETING_MSG
     value: I'm a lazy Koala
   - name: GREETING_DESC
     value: I eat eucalyptus leaves all day
-  - name: BP_JVM_VERSION
-    value: "11"
   params:
   - name: annotations
     value:
@@ -22,6 +25,14 @@ spec:
     value:
       apps.tanzu.vmware.com/framework: maven
       apps.tanzu.vmware.com/pipeline: test
+  - name: api_descriptor
+    value:
+      type: openapi   # We currently support any of openapi, aysncapi, graphql, grpc
+      location:
+        path: "/api-docs"  # The path to the api documentation
+      owner: dev-team   # The team that owns this
+      system: koala-bears
+      description: "A set of API endpoints to view k8s data of a Java web app app."
   source:
     git:
       ref:
